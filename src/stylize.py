@@ -32,10 +32,10 @@ def main():
 
     parser = argparse.ArgumentParser(description='Arguments for testing the network.')
 
-    parser.add_argument('--image', type=str,
+    parser.add_argument('--image', type=str, required=True,
                     help='Path to content image')  
                     
-    parser.add_argument('--model', type=str,
+    parser.add_argument('--model', type=str, required=True,
                     help="Path to model's weights")  
 
     args = parser.parse_args()
