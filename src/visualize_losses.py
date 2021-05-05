@@ -6,7 +6,7 @@ mpl.use('tkagg')
 
 
 def main():
-    path = 'trained_models/trained_losses/'
+    path = 'data/trained_models/trained_losses/'
 
 
     total_loss = np.loadtxt(open(path+"l_total_history.csv", "rb"), delimiter=",")

@@ -24,19 +24,22 @@ This implementation was inspired from the offical [pytorch example](https://gith
 
 ## Commands:
 ### Example to test the model ( stylize an image ) :
-    python3 src/stylize.py --image test/COCO_train2014_000000363111.jpg --model trained_models/mosaic_id5320.pth
+    python3 src/stylize.py --image data/test/COCO_train2014_000000363111.jpg --model data/trained_models/mosaic_id5320.pth
 
 ### To train a model from scratch
-    python3 src/trainer.py --data-dir training_data/ --style style/mosaic.jpeg
+    python3 src/trainer.py --data-dir data/training_data/ --style data/style/mosaic.jpeg
 
 ### To train with checkpoints
-    python3 src/trainer.py --data-dir training_data/ --style style/mosaic.jpeg --save 1 --checkpoints-path dir_to_save
+    python3 src/trainer.py --data-dir data/training_data/ --style data/style/mosaic.jpeg --save 1 --checkpoints-path data/dir_to_save
 
 ### To retrain a model
-    python3 src/trainer.py --data-dir training_data/ --style style/mosaic.jpeg --retrain 1 --retrain-model trained_models/tree_to_retrain.pth
+    python3 src/trainer.py --data-dir data/training_data/ --style data/style/mosaic.jpeg --retrain 1 --retrain-model data/trained_models/tree_to_retrain.pth
 
 ### To visualize the losses
     python3 src/visualize_losses.py
+    
+### To see the different arguments of trainer.py:
+    python3 src/trainer.py
     
 ## Perceptual Loss
 ### VGG16 Architecture:
