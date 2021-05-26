@@ -42,5 +42,12 @@ This implementation was inspired from the offical [pytorch example](https://gith
     python3 src/trainer.py
     
 ## Perceptual Loss
+
+### Transformation Network Architecture
+![Network](net.png)
+
 ### VGG16 Architecture:
 ![VGG16 Architecture](vgg16ARCH.png)
+
+### Results
+![Results](results.png)
